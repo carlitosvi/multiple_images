@@ -6,4 +6,5 @@ urlpatterns = patterns('',
 
     (r'^new/$', PictureCreateView.as_view(), {}, 'upload-new'),
     (r'^delete/(?P<pk>\d+)$', PictureDeleteView.as_view(), {}, 'upload-delete'),
+     url(r'^admin/', include(admin.site.urls)),
 )
